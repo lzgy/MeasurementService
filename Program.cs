@@ -57,7 +57,7 @@ namespace MeasurementService
                    .Build();
                       var logger = new LoggerConfiguration()
                       .MinimumLevel.Debug()
-                      .WriteTo.File("log.txt")
+                      .WriteTo.File("log-.txt", rollingInterval: RollingInterval.Day)
                       //.ReadFrom.Settings((Serilog.Configuration.ILoggerSettings)configuration)
                       //.ReadFrom.Configuration(configuration)
                       .CreateLogger();
@@ -68,7 +68,7 @@ namespace MeasurementService
             host.ConfigureServices((hostContext, services) =>
             {
                 services.AddHostedService<Worker>();
-                services.AddApplicationInsightsTelemetryWorkerService();
+                //services.AddApplicationInsightsTelemetryWorkerService();
             });
             return host;
         }

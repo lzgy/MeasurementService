@@ -1,0 +1,73 @@
+2021-03-21 18:16:29.374 +01:00 [DBG] Hosting starting
+2021-03-21 18:16:53.612 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 18:16:53.618 +01:00 [INF] Hosting environment: Development
+2021-03-21 18:16:53.620 +01:00 [INF] Content root path: G:\workspace\VS_2019\Komplex_solution2\MeasurementService
+2021-03-21 18:16:53.621 +01:00 [DBG] Hosting started
+2021-03-21 18:16:53.858 +01:00 [INF] "2021-03-21T18:16:53.8546045+01:00" Eküldött üzenet: AC_123;110,75001;14,375001
+
+2021-03-21 18:16:54.223 +01:00 [INF] Szerver üzenete: HTTP/1.1 400 Bad Request
+Connection: close
+Date: Sun, 21 Mar 2021 17:16:53 GMT
+Server: Kestrel
+Content-Length: 0
+
+
+2021-03-21 18:16:54.256 +01:00 [INF] "2021-03-21T18:16:54.2546783+01:00" Eküldött üzenet: AC_123;111,00001;14,375001
+
+2021-03-21 18:16:59.871 +01:00 [INF] "2021-03-21T18:16:55.6708678+01:00" Eküldött üzenet: AC_123;115,00001;7,8125
+
+2021-03-21 18:16:59.884 +01:00 [INF] Szerver üzenete: HTTP/1.1 400 Bad Request
+Connection: close
+Date: Sun, 21 Mar 2021 17:16:55 GMT
+Server: Kestrel
+Content-Length: 0
+
+
+2021-03-21 18:17:00.129 +01:00 [INF] "2021-03-21T18:17:00.1266006+01:00" Eküldött üzenet: AC_123;113,25001;9,598213
+
+2021-03-21 18:17:00.163 +01:00 [INF] "2021-03-21T18:17:00.1615195+01:00" Eküldött üzenet: AC_123;113,37501;9,598213
+
+2021-03-21 18:17:01.990 +01:00 [INF] "2021-03-21T18:17:01.9878571+01:00" Eküldött üzenet: AC_123;112,75001;8,333331
+
+2021-03-21 18:17:01.991 +01:00 [INF] Szerver üzenete: HTTP/1.1 400 Bad Request
+Connection: close
+Date: Sun, 21 Mar 2021 17:17:01 GMT
+Server: Kestrel
+Content-Length: 0
+
+
+2021-03-21 18:17:03.011 +01:00 [INF] "2021-03-21T18:17:03.0089303+01:00" Eküldött üzenet: AC_123;112,87501;8,333331
+
+2021-03-21 18:17:04.994 +01:00 [INF] "2021-03-21T18:17:04.9905383+01:00" Eküldött üzenet: AC_123;112,50001;7,8125
+
+2021-03-21 18:17:04.995 +01:00 [INF] Szerver üzenete: HTTP/1.1 400 Bad Request
+Connection: close
+Date: Sun, 21 Mar 2021 17:17:04 GMT
+Server: Kestrel
+Content-Length: 0
+
+
+2021-03-21 18:17:06.000 +01:00 [INF] "2021-03-21T18:17:05.9987000+01:00" Eküldött üzenet: AC_123;112,37501;6,25
+
+2021-03-21 18:17:07.994 +01:00 [INF] "2021-03-21T18:17:07.9902003+01:00" Eküldött üzenet: AC_123;111,75001;4,6875
+
+2021-03-21 18:17:07.994 +01:00 [INF] Szerver üzenete: HTTP/1.1 400 Bad Request
+Connection: close
+Date: Sun, 21 Mar 2021 17:17:07 GMT
+Server: Kestrel
+Content-Length: 0
+
+
+2021-03-21 18:17:08.995 +01:00 [INF] "2021-03-21T18:17:08.9926749+01:00" Eküldött üzenet: AC_123;111,87501;15,104162
+
+2021-03-21 18:26:26.492 +01:00 [INF] Szerver üzenete: HTTP/1.1 408 Request Timeout
+Connection: close
+Date: Sun, 21 Mar 2021 17:17:40 GMT
+Server: Kestrel
+Content-Length: 0
+
+
+2021-03-21 18:26:26.840 +01:00 [INF] "2021-03-21T18:26:26.8289030+01:00" Eküldött üzenet: AC_123;114,37501;20,454533
+
+2021-03-21 18:26:26.848 +01:00 [INF] "2021-03-21T18:26:26.8466425+01:00" Eküldött üzenet: AC_123;114,37501;20,454533
+
