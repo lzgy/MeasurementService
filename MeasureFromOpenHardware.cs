@@ -7,12 +7,58 @@ using OpenHardwareMonitor.Hardware.CPU;
 
 namespace MeasurementService
 {
+    class UpdateVisitor : IVisitor
+    {
+        public void VisitComputer(IComputer computer)
+        {
+            computer.Traverse(this);
+        }
+        public void VisitHardware(IHardware hardware)
+        {
+            hardware.Update();
+            foreach (IHardware subHardware in hardware.SubHardware) subHardware.Accept(this);
+        }
+        public void VisitSensor(ISensor sensor) { }
+        public void VisitParameter(IParameter parameter) { }
+    }
     internal class MeasureFromOpenHardware : Measure
     {
-        public override string CpuTempTotal { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public override string CpuUsageTotal { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public override int PeriodTime { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        UpdateVisitor updateVisitor;
+        Computer computer ;
 
+        public override string CpuTempTotal 
+        {
+            get 
+            {
+                computer.Accept(updateVisitor);
+                return computer.Hardware[0].Sensors[18].Value.ToString(); 
+            }
+            set { CpuTempTotal = value; } 
+        }
+        public override string CpuUsageTotal 
+        { 
+            get 
+            {
+                computer.Accept(updateVisitor);
+                return computer.Hardware[0].Sensors[16].Value.ToString(); 
+            }
+            set { CpuUsageTotal = value; }
+        }
+        public override int PeriodTime 
+        { get; set; }
+
+        public MeasureFromOpenHardware() 
+        {
+            updateVisitor = new UpdateVisitor();
+            computer = new Computer();
+            computer.Open();
+            computer.CPUEnabled = true;
+            computer.Accept(updateVisitor);
+        }
+
+        /// <summary>
+        /// Nincs implementálva
+        /// </summary>
         public override void refresh()
         {
             throw new NotImplementedException();
@@ -20,7 +66,7 @@ namespace MeasurementService
 
         public override string refreshToString()
         {
-            throw new NotImplementedException();
+            return CpuTempTotal + ";" + CpuUsageTotal;
         }
     }
 }
