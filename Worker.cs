@@ -32,7 +32,9 @@ namespace MeasurementService
             timer.AutoReset = true;
             timer.Enabled = true;
 
-            measure = new MeasureFromOpenHardware();
+            measure = new MeasureFromOpenHardware();     //openhardware-val nincs ezen a cpu-n hõmérséklet adat
+            //measure = new MeasureFromManagment();     //nincs jogosultság???
+
             try
             {
                 client = new SocketClient(ConfigurationManager.AppSettings["ServerIP"].ToString(), Convert.ToUInt16(ConfigurationManager.AppSettings["Port"]));
