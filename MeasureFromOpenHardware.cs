@@ -31,7 +31,7 @@ namespace MeasurementService
             get 
             {
                 computer.Accept(updateVisitor);
-                return computer.Hardware[0].Sensors[18].Value.ToString(); 
+                return computer.Hardware[0].Sensors[13].Value.ToString(); 
             }
             set { CpuTempTotal = value; } 
         }
@@ -40,7 +40,7 @@ namespace MeasurementService
             get 
             {
                 computer.Accept(updateVisitor);
-                return computer.Hardware[0].Sensors[16].Value.ToString(); 
+                return computer.Hardware[0].Sensors[6].Value.ToString(); 
             }
             set { CpuUsageTotal = value; }
         }
